@@ -10,56 +10,88 @@
 </head>
 <body>
 
-
+<img src="Oni-Audio-Logo-White.png" class ="oni-logo">
     <nav>
         <ul class="nav-links">
-            <div class="nav-item">
-                <li><a href="#">Our Story</a></li>
+            <div class="nav-item" >
+                <li><a href="#" id="first-nav-item">Projects</a></li>
                 <div class="active-nav"></div>
             </div>
             <div class="nav-item">
-                <li><a href="#">Projects</a></li>
+                <li><a href="#">Our Story</a></li>
             </div>
             <div class="nav-item">
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
             </div>
         </ul>
     </nav>
-<video class = "bg-video" autoplay loop muted plays-inline>
+  
+    
+    <video class = "bg-video" autoplay loop muted plays-inline>
     <source src="oni_audio_demoreel.mp4" type="video/mp4">
-</video>
+    </video>
+    <div class="overlay">
+    </div>
 
 <section class="section">
     <div class="card">   
-        <h1>Awesome Sauce 🚀</h1>
+        <h1 class="card-h1">Awesome Sauce 🚀</h1>
         <p>
-            <video class="card-video" autoplay loop muted plays-inline>
-                <source src="oni_audio_demoreel.mp4" type="video/mp4">
-            </video>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda!
-    </p>
+            <div class="responsive-container">
+                <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>       
+            <div class="card-text">
+                <h2>Demo reel Oni Audio</h2>
+                <p>Loremaaaa ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda!
+                </p>
+            </div>
+        
+        </p>
     </div>
     <div class="card">   
-        <h1>Animation 😂</h1>
+        <h1 class="card-h1">Animation 😂<span class="hover-text">Petit texte</span>
+            <div class="button-play"><button>Play</button></div>
+        </h1>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda! 
         </p>
     </div>
     <div class="card">   
-        <h1>Crazy stuff 🍉</h1>
+        <h1 class="card-h1">Crazy stuff 🍉</h1>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda! 
         </p>
     </div>
     <div class="card">   
-        <h1>The last card ❤️</h1>
+        <h1 class="card-h1">The last card ❤️</h1>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda! 
         </p>
     </div>
+    <div class="card">   
+        <h1 class="card-h1">The last card ❤️</h1>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda! 
+        </p>
+    </div>
+
+    <div class="card">   
+        <h1 class="card-h1">The last card ❤️</h1>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda! 
+        </p>
+    </div>
+
+    <div class="card">   
+        <h1 class="card-h1">The last card ❤️</h1>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda! 
+        </p>
+    </div>
+
 </section>
     
-
+<script src="https://player.vimeo.com/api/player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js" integrity="sha512-RL2ypMFkOs/iB79bWnNiFrZRCqyExtQ38n/K+t7Xjf09YZcvSzqgSaGVj+fiVYEqVRLf/WjdHmwGImZM3XO5gA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>

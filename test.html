@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .card {
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      transition: transform 0.6s;
+      position: relative;
+    }
+
+    .card-front,
+    .card-back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .card-front {
+      background: lightblue;
+      z-index: 2;
+    }
+
+    .card-back {
+      background: lightgreen;
+    }
+
+    .card.is-zoomed {
+      transform: scale(1.1);
+    }
+
+    .card.is-darkened {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+
+    .card-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      transition: transform 0.6s, opacity 0.6s;
+      transform: translateY(100%);
+      opacity: 0;
+    }
+
+    .card.is-zoomed .card-text {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-front">
+      <div class="card-text">Text on Card</div>
+    </div>
+    <div class="card-back">Back of Card</div>
+  </div>
+
+  <script>
+    const card = document.querySelector('.card');
+
+    card.addEventListener('mouseenter', function() {
+      card.classList.add('is-zoomed', 'is-darkened');
+    });
+
+    card.addEventListener('mouseleave', function() {
+      card.classList.remove('is-zoomed', 'is-darkened');
+    });
+  </script>
+</body>
+</html>
