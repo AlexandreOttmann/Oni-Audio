@@ -2,38 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'lato', sans-serif ;
 }
 
 body{
-    font-family: 'lato', sans-serif ;
     width: 100%;
+    height: 2000px;
 }
+main{transition: 1s;}
 .oni-logo{
-    position: absolute;
-    /* z-index: 2; */
+    position: fixed;
+    z-index:3;
     top: -1rem;
     left: -1rem;
     max-width:13rem;
-    padding: 1rem;
-    
-    
+    padding: 1rem;   
 }
+
 nav{
     padding: 3rem;
     display: flex;
     justify-content: center;
     background-color: white;
     width: 100%;
+    position: fixed;
+    z-index: 2;
 }
 
-#mute-button{
-    position: absolute;
-    right: 2rem;
-    top : 2.5rem;
-    margin: 0;
-    color: white;
-    background-color: #F7375C;
-}
 
 .nav-links {
     display: flex;
@@ -75,6 +70,7 @@ nav{
     opacity: 70%;
     width: 100%;
     object-fit: cover;
+    transition: 0.5s;
 }
 .overlay{
     position: fixed;
@@ -85,10 +81,32 @@ nav{
     height: 100%;
     object-fit: cover;
     background-image: linear-gradient(to bottom, rgba(34,35,46,0.5) 50%, rgba(34,35,46));
-  }
-  
+    transition: 2s;
+}
+
+
+header{
+    /* background: radial-gradient(  rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0)); */
+    text-align: center;
+    position:static; 
+    padding: 11rem 0 0rem 0;
+    font-weight: 400;
+    font-size: 2rem;
+    width:100%;
+    color: white;
+    /* border-bottom: 10px solid #F7375C; */
+    /* border-top: 100px solid #F7375C; */
+    
+    /* scroll-behavior: smooth; */
+    /* margin-top: 1rem; */
+    /* position: relative; */
+}
+
 
 .section {
+    position: relative;
+    z-index: 3;
+    scroll-behavior: smooth;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     margin: 5rem 0rem;
@@ -103,7 +121,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(56, 90, 224, 0.5);
+    background-color: rgba(0, 6, 29,0.8);
     
     grid-column: span 2;
     font-size: 1.2rem;
@@ -113,7 +131,7 @@ nav{
     gap: 2rem; 
     color: white;
     backdrop-filter: blur(2px);
-
+    
     
     
 }
@@ -132,6 +150,7 @@ nav{
     flex-direction: column;
     align-items: center;
     font-size: 1rem;
+    margin-top: 4rem;
     
 }
 
@@ -151,14 +170,25 @@ button{
     color:#000000;
     background-color:#ffffff;
     border-radius:5rem;
-     -moz-border-radius:5rem; 
-     -webkit-border-radius:5rem;
-     text-transform:uppercase;
-     text-align: center;
-     padding: 1rem 2rem;
-     border: none;
-     font-weight: bold;
+    -moz-border-radius:5rem; 
+    -webkit-border-radius:5rem;
+    text-transform:uppercase;
+    text-align: center;
+    padding: 1rem 2rem;
+    border: none;
+    font-weight: bold;
+    transition:0.5s ;
     
+    
+}
+#mute-button{
+    position: fixed;
+    z-index:2;
+    right: 2rem;
+    top : 2.5rem;
+    margin: 0;
+    color: white;
+    background-color: #F7375C;
 }
 
 .card.active p{
@@ -220,12 +250,14 @@ button{
     /* border-radius: 20px solid white; */
     padding : 1rem;
     flex-direction: row;
-    flex-wrap: nowrap;
-    
+    flex-wrap: nowrap;    
     justify-content:center;
     align-items: flex-start ;
-    /* text-align: right; */
-   
+}
+
+.card.active:nth-child(1){
+    
+    background-image: url('');
 }
 .card-text{
     margin-top: 2.5rem;
@@ -238,5 +270,56 @@ button{
 }
 
 
+footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    /* background: linear-gradient( to left, rgba(247,55,92,0.9) 20%, rgba(56,90,225, 0.6)); */
+    text-align: center;
+    padding: 1em 0;
+    color: white;
+    transition: 2s;
+}
 
-/* Rotation card border */
+
+/* card background IMG */
+
+/* .card:nth-child(1){
+    background-image: url('Oni-Audio-Logo.png');
+    background-size:cover ;
+    background-repeat: no-repeat;
+    
+} */
+
+
+.img-1st-card{
+    position: absolute;
+    width: 45vh;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transition: 1.5s;
+    
+    z-index: -1;
+    
+
+    
+}
+
+
+.card:hover>.img-1st-card{
+    width: 110%;
+    opacity: 0.5;
+    transition-duration: 0.5s;
+    
+}
+.card.active .img-1st-card{
+    display: none;
+}
+
+
+
+.card{
+    overflow: hidden;
+   
+}

@@ -64,9 +64,9 @@ let muteButton = document.getElementById("mute-button");
 
 muteButton.addEventListener('click', (function(){
     // video.muted = !video.muted;
-    let initialText = "mute"
+    let initialText = "UNMUTE"
     if (video.muted == true){
-        muteButton.textContent ="UNMUTE";
+        muteButton.textContent ="MUTE";
         video.muted = !video.muted;
     }
     else {

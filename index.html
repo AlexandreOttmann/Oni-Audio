@@ -7,9 +7,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Oni Audio</title>
+    <!-- Script for Scroll behavior // Change Bg-video opacity -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+          $(".bg-video").css({"opacity" : "1"})
+          $(".overlay").css({"opacity" : "0"})
+          $("main").css({"opacity" : "0"})
+          $("button").css({"top" : "85%"})
+          
+          $("footer").css({"background-color" : "rgba(0, 0, 0, 1"}) 
+        }
+        else {
+          $(".bg-video").css({"opacity" : "0.5"})
+          $(".overlay").css({"opacity" : "1"})
+          $("main").css({"opacity" : "1"})
+          $("button").css({"top" : ""})
+
+          $("footer").css({"background-color" : "rgba(0, 0, 0, 0"}) 
+        }
+      })
+    })
+    </script>
 </head>
 <body>
-
+<main>
 <img src="Oni-Audio-Logo-White.png" class ="oni-logo">
     <nav>
         <ul class="nav-links">
@@ -26,73 +50,149 @@
         </ul>
     </nav>
 
-  
-    
+</main>
+
+<button type="button" id="mute-button">unmute</button>
+
     <video class = "bg-video" id="background-video" autoplay loop muted plays-inline>
     <source src="oni_audio_demoreel.mp4" type="video/mp4">
     </video>
     <div class="overlay">
     </div>
 
-    <button type="button" id="mute-button">mute</button>
+
+<header>
+    Stories matters, let us help build yours. <br>
+    From podcast, to ads, app and film
+</header>
+
 
 <section class="section">
-    <div class="card">   
-        <h1 class="card-h1">Awesome Sauce 🚀</h1>
-        <p>
+
+    <div class="card card1">   
+        <h1 class="card-h1">Oni Reel<span class="hover-text">Sound Design & Composition</span>
+            <div class="button-play"><button>Play</button></div>
+        </h1>
             <div class="responsive-container">
                 <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>       
             <div class="card-text">
                 <h2>Demo reel Oni Audio</h2>
-                <p>Loremaaaa ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda!
+                <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
                 </p>
             </div>
-        
-        </p>
+             <img src="Oni-Audio-Logo.png" alt="image reel Oni" class="img-1st-card">
     </div>
-    <div class="card">   
-        <h1 class="card-h1">Animation 😂<span class="hover-text">Petit texte</span>
+
+    <div class="card card2">   
+        <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
             <div class="button-play"><button>Play</button></div>
         </h1>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda! 
-        </p>
-    </div>
-    <div class="card">   
-        <h1 class="card-h1">Crazy stuff 🍉</h1>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda! 
-        </p>
-    </div>
-    <div class="card">   
-        <h1 class="card-h1">The last card ❤️</h1>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda! 
-        </p>
-    </div>
-    <div class="card">   
-        <h1 class="card-h1">The last card ❤️</h1>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda! 
-        </p>
+        <div class="responsive-container">
+            <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>       
+        <div class="card-text">
+            <h2>Demo reel Oni Audio</h2>
+            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
+            </p>
+        </div>
+        <img src="Choree.png" alt="image reel Oni" class="img-1st-card">
     </div>
 
-    <div class="card">   
-        <h1 class="card-h1">The last card ❤️</h1>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda! 
-        </p>
+
+    <div class="card card2">   
+        <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
+            <div class="button-play"><button>Play</button></div>
+        </h1>
+        <div class="responsive-container">
+            <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>       
+        <div class="card-text">
+            <h2>Demo reel Oni Audio</h2>
+            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
+            </p>
+        </div>
+        <img src="Choree.png" alt="image reel Oni" class="img-1st-card">
     </div>
 
-    <div class="card">   
-        <h1 class="card-h1">The last card ❤️</h1>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis laudantium ratione corrupti in repellat pariatur porro quis assumenda! 
-        </p>
+    <div class="card card2">   
+        <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
+            <div class="button-play"><button>Play</button></div>
+        </h1>
+        <div class="responsive-container">
+            <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>       
+        <div class="card-text">
+            <h2>Demo reel Oni Audio</h2>
+            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
+            </p>
+        </div>
+        <img src="Choree.png" alt="image reel Oni" class="img-1st-card">
+    </div>
+
+    <div class="card card2">   
+        <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
+            <div class="button-play"><button>Play</button></div>
+        </h1>
+        <div class="responsive-container">
+            <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>       
+        <div class="card-text">
+            <h2>Demo reel Oni Audio</h2>
+            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
+            </p>
+        </div>
+        <img src="Choree.png" alt="image reel Oni" class="img-1st-card">
+    </div>
+
+    <div class="card card2">   
+        <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
+            <div class="button-play"><button>Play</button></div>
+        </h1>
+        <div class="responsive-container">
+            <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>       
+        <div class="card-text">
+            <h2>Demo reel Oni Audio</h2>
+            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
+            </p>
+        </div>
+        <img src="Choree.png" alt="image reel Oni" class="img-1st-card">
+    </div>
+
+    <div class="card card2">   
+        <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
+            <div class="button-play"><button>Play</button></div>
+        </h1>
+        <div class="responsive-container">
+            <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>       
+        <div class="card-text">
+            <h2>Demo reel Oni Audio</h2>
+            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
+            </p>
+        </div>
+        <img src="Choree.png" alt="image reel Oni" class="img-1st-card">
+    </div>
+
+    <div class="card card2">   
+        <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
+            <div class="button-play"><button>Play</button></div>
+        </h1>
+        <div class="responsive-container">
+            <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>       
+        <div class="card-text">
+            <h2>Demo reel Oni Audio</h2>
+            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
+            </p>
+        </div>
+        <img src="Choree.png" alt="image reel Oni" class="img-1st-card">
     </div>
 
 </section>
+
+<footer>Oni Audio</footer>
     
 <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
