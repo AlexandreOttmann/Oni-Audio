@@ -56,3 +56,24 @@ card.addEventListener('click', () => {
     })
 })
 });
+
+// =====Speaker button======
+
+let video = document.getElementById("background-video");
+let muteButton = document.getElementById("mute-button");
+
+muteButton.addEventListener('click', (function(){
+    // video.muted = !video.muted;
+    let initialText = "mute"
+    if (video.muted == true){
+        muteButton.textContent ="UNMUTE";
+        video.muted = !video.muted;
+    }
+    else {
+        muteButton.textContent = initialText;
+        video.muted = !video.muted;
+    }
+    }))
+
+
+
