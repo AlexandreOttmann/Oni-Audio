@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,259 +10,390 @@
     <title>Oni Audio</title>
     <!-- Script for Scroll behavior // Change Bg-video opacity -->
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $(window).scroll(function(){
-        if($(this).scrollTop() > 100){
-          $(".bg-video").css({"opacity" : "1"})
-          $(".overlay").css({"opacity" : "0"})
-          $("main").css({"opacity" : "0"})
-          $("button").css({"top" : "85%"})
-          
-          $("footer").css({"background-color" : "rgba(0, 0, 0, 1"}) 
-        }
-        else {
-          $(".bg-video").css({"opacity" : "0.5"})
-          $(".overlay").css({"opacity" : "1"})
-          $("main").css({"opacity" : "1"})
-          $("button").css({"top" : ""})
-
-          $("footer").css({"background-color" : "rgba(0, 0, 0, 0"}) 
-        }
-      })
-    })
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 500 && $(this).scrollTop()< 1500) {
+                    $(".bg-video").css({ "opacity": "1" })
+                    $(".overlay").css({ "opacity": "0" })
+                    $("main").css({ "opacity": "0" })
+                    $("button").css({ "top": "85%" })
+                    $("footer").css({ "background-color": "rgba(0, 0, 0, 1" })
+                }
+                else {
+                    $(".bg-video").css({ "opacity": "0.1" })
+                    $(".overlay").css({ "opacity": "1" })
+                    $("main").css({ "opacity": "1" })
+                    $("button").css({ "top": "" })
+                    $("footer").css({ "background-color": "rgba(0, 0, 0, 0" })
+                }
+            })
+        })
     </script>
 </head>
-<body>
-<main>
-    <div class="navbar">
-        <img src="Oni-Audio-Logo-White.png" class ="oni-logo">
-    <nav>
-        <ul class="nav-links">
-            <div class="nav-item" >
-                <li><a href="#" id="first-nav-item">Projects</a></li>
-                <div class="active-nav"></div>
+
+<body> 
+
+
+<!-- ==========PAGE 1  PROJECTS==================-->
+<div class="MAIN-CONTAINER">
+    <div class="container1-projects">
+        <main>
+        <!-- NAV BAR -->
+            <div class="navbar">
+                <a href="index.html">
+                <img src="Oni-Audio-Logo-White.png" class="oni-logo">
+                </a>
+                <nav>
+                    <ul class="nav-links">
+                        <div class="nav-item">
+                            <li><a href="#anchor1" id="first-nav-item">Projects</a></li>
+                            <div class="active-nav"></div>
+                        </div>
+                        <div class="nav-item">
+                            <li><a href="#anchor2">Our Story</a></li>
+                        </div>
+                        <div class="nav-item">
+                            <li><a href="#anchor3">Contact</a></li>
+                        </div>
+                    </ul>
+                </nav>
             </div>
-            <div class="nav-item">
-                <li><a href="#">Our Story</a></li>
-            </div>
-            <div class="nav-item">
-                <li><a href="#">Contact</a></li>
-            </div>
-        </ul>
-    </nav>
-    </div>
+        </main>
 
-</main>
+        <!-- BUTTON MUTE & BG VIDEO -->
 
-<button type="button" id="mute-button">unmute</button>
+        <button type="button" id="mute-button">unmute</button>
 
-    <video class = "bg-video" id="background-video" autoplay loop muted plays-inline>
-    <source src="oni_audio_demoreel.mp4" type="video/mp4">
-    </video>
-    <div class="overlay">
-    </div>
-
-
-<header>
-    Stories matters, let us help build yours. <br>
-    From podcast, to ads, app and film
-</header>
-
-
-<section class="section">
-
-    <div class="card card1">   
-        <h1 class="card-h1">Oni Reel<span class="hover-text">Sound Design & Composition</span>
-            <div class="button-play"><button>Play</button></div>
-        </h1>
-            <div class="responsive-container">
-                <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            </div>       
-            <div class="card-text">
-                <h2>Demo reel Oni Audio</h2>
-                <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
-                </p>
-            </div>
-             <img src="Demo-Reel-BG.png" alt="image reel Oni" class="img-1st-card">
-    </div>
-
-    <div class="card card2">   
-        <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
-            <div class="button-play"><button>Play</button></div>
-        </h1>
-        <div class="responsive-container">
-            <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>       
-        <div class="card-text">
-            <h2>Demo reel Oni Audio</h2>
-            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
-            </p>
+        <video class="bg-video" id="background-video" autoplay loop muted plays-inline>
+            <source src="oni_audio_demoreel.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
         </div>
-        <img src="Coalescence.png" alt="image reel Oni" class="img-1st-card">
-    </div>
 
+        <!-- HEADER -->
+        <header id="anchor1">
+            Stories matters, let us help build yours. <br>
+            From podcast, to ads, app and film
+        </header>
 
-    <div class="card card3">   
-        <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
-            <div class="button-play"><button>Play</button></div>
-        </h1>
-        <div class="responsive-container">
-            <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>       
-        <div class="card-text">
-            <h2>Demo reel Oni Audio</h2>
-            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
-            </p>
-        </div>
-        <img src="Koober1.png" alt="image reel Oni" class="img-1st-card">
-    </div>
-
-    <div class="card card2">   
-        <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
-            <div class="button-play"><button>Play</button></div>
-        </h1>
-        <div class="responsive-container">
-            <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>       
-        <div class="card-text">
-            <h2>Demo reel Oni Audio</h2>
-            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
-            </p>
-        </div>
-        <img src="Choree.png" alt="image reel Oni" class="img-1st-card">
-    </div>
-
-    <div class="card card2">   
-        <h1 class="card-h1">Voice Reel<span class="hover-text">Record, Sound Design & Mix</span>
-            <div class="button-play"><button>Play</button></div>
-        </h1>
-        <div class="responsive-container">
-            <iframe class="card-video" src="https://player.vimeo.com/video/547610116?h=22299c6788"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>       
         
-        <div class="card-text">
-            <h2>Voice Demo reel Oni Audio</h2>
-            <p>Here is our Voice Demo reel. Through mutliple projects, we Recorded, Composed and Sound Designed every project you can hear. <br><br><a href="https://vimeo.com/486536163">Vimeo page</a>
-            </p>
-        </div>
-        <img src="Oni-Voice-Reel.png" alt="image reel Oni" class="img-1st-card">
-    </div>
+        <!-- =====!!CARDS SECTION!!======== -->
+        <section class="section" id="cards">
+            <!-- CARD 1 -->
+            <div class="card card1">
+                <h1 class="card-h1">Oni Reel<span class="hover-text">Sound Design & Composition</span>
+                    <div class="button-play"><button>Play</button></div>
+                </h1>
+                <div class="responsive-container">
+                    <iframe class="card-video"
+                        src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card-text">
+                    <h2>Demo reel Oni Audio</h2>
+                    <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite
+                        animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo
+                            page</a>
+                    </p>
+                </div>
+                <img src="Demo-Reel-BG.png" alt="image reel Oni" class="img-1st-card">
+            </div>
 
-    <div class="card card2">   
-        <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
-            <div class="button-play"><button>Play</button></div>
-        </h1>
-        <div class="responsive-container">
-            <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>       
-        <div class="card-text">
-            <h2>Demo reel Oni Audio</h2>
-            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
-            </p>
-        </div>
-        <img src="belfast.png" alt="image reel Oni" class="img-1st-card">
-    </div>
+            <!-- CARD 2 -->
+            <div class="card card1">
+                <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
+                    <div class="button-play"><button>Play</button></div>
+                </h1>
+                <div class="responsive-container">
+                    <iframe class="card-video"
+                        src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card-text">
+                    <h2>Demo reel Oni Audio</h2>
+                    <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite
+                        animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo
+                            page</a>
+                    </p>
+                </div>
+                <img src="Coalescence.png" alt="image reel Oni" class="img-1st-card">
+            </div>
 
-    <div class="card card2">   
-        <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
-            <div class="button-play"><button>Play</button></div>
-        </h1>
-        <div class="responsive-container">
-            <iframe class="card-video" src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>       
-        <div class="card-text">
-            <h2>Demo reel Oni Audio</h2>
-            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
-            </p>
-        </div>
-        <img src="morena.png" alt="image reel Oni" class="img-1st-card">
-    </div>
+            <!-- CARD 3 -->
+            <div class="card card3">
+                <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
+                    <div class="button-play"><button>Play</button></div>
+                </h1>
+                <div class="responsive-container">
+                    <iframe class="card-video"
+                        src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card-text">
+                    <h2>Demo reel Oni Audio</h2>
+                    <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite
+                        animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo
+                            page</a>
+                    </p>
+                </div>
+                <img src="Koober1.png" alt="image reel Oni" class="img-1st-card">
+            </div>
 
-    <div class="card card2">   
-        <h1 class="card-h1">ENGIE Energy<span class="hover-text">Sound Design</span>
-            <div class="button-play"><button>Play</button></div>
-        </h1>
-        <div class="responsive-container">
-            <iframe class="card-video"  width="1904" height="760" src="https://www.youtube.com/embed/I7xQVoqflV8" title="Pourquoi les Français vont tous devoir perdre 7 tonnes pour sauver la planète ? | Kilo What" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="card-text">
-            <h2>J'agis avec ENGIE</h2>
-            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
-            </p>
-        </div>
-        <img src="Engie.png" alt="image reel Oni" class="img-1st-card">
-    </div>
+            <!-- CARD 4 -->
+            <div class="card card2">
+                <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
+                    <div class="button-play"><button>Play</button></div>
+                </h1>
+                <div class="responsive-container">
+                    <iframe class="card-video"
+                        src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card-text">
+                    <h2>Demo reel Oni Audio</h2>
+                    <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite
+                        animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo
+                            page</a>
+                    </p>
+                </div>
+                <img src="Choree.png" alt="image reel Oni" class="img-1st-card">
+            </div>
 
-    <div class="card card2">   
-        <h1 class="card-h1">Le Journal de Gurty<span class="hover-text">Record, Sound Design & Mix</span>
-            <div class="button-play"><button>Play</button></div>
-        </h1>
-        <div class="responsive-container responsive-container2">
-            <iframe class="card-video" width="451" height="801" src="https://www.youtube.com/embed/ZO0Ezw5KUIU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="card-text">
-            <h2>Le Journal de Gurty - Kidsono</h2>
-            <p>We went to the studio to record Audrey Lamy for this Audio Book. Produced by Kidsono and Edited by the french Edition House Gallimard. We recorded 4 opus that we Sound Designed and mixed too. Each book is a 1 hour long funny story for children<a href="https://vimeo.com/486536163">Vimeo page</a>
-            </p>
-        </div>
-        <img src="gurty.png" alt="image reel Oni" class="img-1st-card">
-    </div>
-
-    <div class="card card2">   
-        <h1 class="card-h1">ENGIE Energy<span class="hover-text">Sound Design</span>
-            <div class="button-play"><button>Play</button></div>
-        </h1>
-        <div class="responsive-container">
-            <iframe class="card-video"  width="1904" height="760" src="https://www.youtube.com/embed/I7xQVoqflV8" title="Pourquoi les Français vont tous devoir perdre 7 tonnes pour sauver la planète ? | Kilo What" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="card-text">
-            <h2>J'agis avec ENGIE</h2>
-            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
-            </p>
-        </div>
-        <img src="Engie.png" alt="image reel Oni" class="img-1st-card">
-    </div>
-
-    <div class="card card2">   
-        <h1 class="card-h1">Molière fou de théâtre<span class="hover-text">Sound Design</span>
-            <div class="button-play"><button>Play</button></div>
-        </h1>
-        <div class="responsive-container">
-            <iframe class="card-video"  width="1904" height="760" src="https://www.youtube.com/embed/bHDRdx_67YU" title="Molière, fou de théâtre, livre audio by Kidsono" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="card-text">
-            <h2>Molière fou de thâtre</h2>
-            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
-            </p>
-        </div>
-        <img src="moliere.png" alt="image reel Oni" class="img-1st-card">
-    </div>
-
-    <div class="card card2">   
-        <h1 class="card-h1">ENGIE Energy<span class="hover-text">Sound Design</span>
-            <div class="button-play"><button>Play</button></div>
-        </h1>
-        <div class="responsive-container responsive-container2">
-            <!-- <iframe class="card-video"  width="1904" height="760" src="https://www.youtube.com/embed/I7xQVoqflV8" title="Pourquoi les Français vont tous devoir perdre 7 tonnes pour sauver la planète ? | Kilo What" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <a href="https://www.instagram.com/tv/CgMUu9kKAGj/?utm_source=ig_embed&amp;utm_campaign=loading" target="_blank">Une publication partagée par Le journal de Gurty (@le_journal_de_gurty)</a></blockquote> <script async src="//www.instagram.com/embed.js"></script>
-        </div>
+            <!-- CARD 5 -->
+            <div class="card card2">
+                <h1 class="card-h1">Voice Reel<span class="hover-text">Record, Sound Design & Mix</span>
+                    <div class="button-play"><button>Play</button></div>
+                </h1>
+                <div class="responsive-container">
+                    <iframe class="card-video" src="https://player.vimeo.com/video/547610116?h=22299c6788" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
 
                 <div class="card-text">
-            <h2>J'agis avec ENGIE</h2>
-            <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo page</a>
-            </p>
-        </div>
-        <img src="Engie.png" alt="image reel Oni" class="img-1st-card">
+                    <h2>Voice Demo reel Oni Audio</h2>
+                    <p>Here is our Voice Demo reel. Through mutliple projects, we Recorded, Composed and Sound Designed
+                        every project you can hear. <br><br><a href="https://vimeo.com/486536163">Vimeo page</a>
+                    </p>
+                </div>
+                <img src="Oni-Voice-Reel.png" alt="image reel Oni" class="img-1st-card">
+            </div>
+
+            <!-- CARD 6 -->
+
+            <div class="card card2">
+                <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
+                    <div class="button-play"><button>Play</button></div>
+                </h1>
+                <div class="responsive-container">
+                    <iframe class="card-video"
+                        src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card-text">
+                    <h2>Demo reel Oni Audio</h2>
+                    <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite
+                        animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo
+                            page</a>
+                    </p>
+                </div>
+                <img src="belfast.png" alt="image reel Oni" class="img-1st-card">
+            </div>
+
+            <!-- CARD 7 -->
+
+            <div class="card card2">
+                <h1 class="card-h1">Chorée<span class="hover-text">Sound Design & Mix</span>
+                    <div class="button-play"><button>Play</button></div>
+                </h1>
+                <div class="responsive-container">
+                    <iframe class="card-video"
+                        src="https://player.vimeo.com/video/486536163?h=e44212c279&autoplay=0&title=0&byline=0&controls=1"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card-text">
+                    <h2>Demo reel Oni Audio</h2>
+                    <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite
+                        animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo
+                            page</a>
+                    </p>
+                </div>
+                <img src="morena.png" alt="image reel Oni" class="img-1st-card">
+            </div>
+
+            <!-- CARD 8 -->
+
+            <div class="card card2">
+                <h1 class="card-h1">ENGIE Energy<span class="hover-text">Sound Design</span>
+                    <div class="button-play"><button>Play</button></div>
+                </h1>
+                <div class="responsive-container">
+                    <iframe class="card-video" width="1904" height="760" src="https://www.youtube.com/embed/I7xQVoqflV8"
+                        title="Pourquoi les Français vont tous devoir perdre 7 tonnes pour sauver la planète ? | Kilo What"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card-text">
+                    <h2>J'agis avec ENGIE</h2>
+                    <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite
+                        animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo
+                            page</a>
+                    </p>
+                </div>
+                <img src="escape.png" alt="image reel Oni" class="img-1st-card">
+            </div>
+            <!-- CARD 9 -->
+            <div class="card card2">
+                <h1 class="card-h1">Le Journal de Gurty<span class="hover-text">Record, Sound Design & Mix</span>
+                    <div class="button-play"><button>Play</button></div>
+                </h1>
+                <div class="responsive-container responsive-container2">
+                    <iframe class="card-video" width="451" height="801" src="https://www.youtube.com/embed/ZO0Ezw5KUIU"
+                        title="" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card-text">
+                    <h2>Le Journal de Gurty - Kidsono</h2>
+                    <p>We went to the studio to record Audrey Lamy for this Audio Book. Produced by Kidsono and Edited by
+                        the french Edition House Gallimard. We recorded 4 opus that we Sound Designed and mixed too. Each
+                        book is a 1 hour long funny story for children<a href="https://vimeo.com/486536163">Vimeo page</a>
+                    </p>
+                </div>
+                <img src="gurty.png" alt="image reel Oni" class="img-1st-card">
+            </div>
+
+            <!-- CARD 10 -->
+
+            <div class="card card2">
+                <h1 class="card-h1">ENGIE Energy<span class="hover-text">Sound Design</span>
+                    <div class="button-play"><button>Play</button></div>
+                </h1>
+                <div class="responsive-container">
+                    <iframe class="card-video" width="1904" height="760" src="https://www.youtube.com/embed/I7xQVoqflV8"
+                        title="Pourquoi les Français vont tous devoir perdre 7 tonnes pour sauver la planète ? | Kilo What"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card-text">
+                    <h2>J'agis avec ENGIE</h2>
+                    <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite
+                        animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo
+                            page</a>
+                    </p>
+                </div>
+                <img src="engie.png" alt="image reel Oni" class="img-1st-card">
+            </div>
+
+            <!-- CARD 11 -->
+
+            <div class="card card2">
+                <h1 class="card-h1">Molière fou de théâtre<span class="hover-text">Sound Design</span>
+                    <div class="button-play"><button>Play</button></div>
+                </h1>
+                <div class="responsive-container">
+                    <iframe class="card-video" width="1904" height="760" src="https://www.youtube.com/embed/bHDRdx_67YU"
+                        title="Molière, fou de théâtre, livre audio by Kidsono" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card-text">
+                    <h2>Molière fou de thâtre</h2>
+                    <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite
+                        animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo
+                            page</a>
+                    </p>
+                </div>
+                <img src="moliere.png" alt="image reel Oni" class="img-1st-card">
+            </div>
+
+            <!-- CARD 12 -->
+
+            <div class="card card2">
+                <h1 class="card-h1">ENGIE Energy<span class="hover-text">Sound Design</span>
+                    <div class="button-play"><button>Play</button></div>
+                </h1>
+                <div class="responsive-container responsive-container2">
+                    <a href="https://www.instagram.com/tv/CgMUu9kKAGj/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        target="_blank">Une publication partagée par Le journal de Gurty (@le_journal_de_gurty)</a>
+                    </blockquote>
+                    <script async src="//www.instagram.com/embed.js"></script>
+                </div>
+
+                <div class="card-text">
+                    <h2>J'agis avec ENGIE</h2>
+                    <p>Here is our Sound Design Demo reel. We composed the music and made a video editing with our favorite
+                        animation from 2021. You can find the full credit on the <a href="https://vimeo.com/486536163">Vimeo
+                            page</a>
+                    </p>
+                </div>
+                <img src="rice.png" alt="image reel Oni" class="img-1st-card">
+            </div>
+        </section>
     </div>
 
-</section>
-
-<footer>Oni Audio</footer>
+        <!-- =======FOOTER========= -->
+        <footer>Oni Audio</footer>
+    <!-- SECOND CONTAINER -->
     
-<script src="https://player.vimeo.com/api/player.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js" integrity="sha512-RL2ypMFkOs/iB79bWnNiFrZRCqyExtQ38n/K+t7Xjf09YZcvSzqgSaGVj+fiVYEqVRLf/WjdHmwGImZM3XO5gA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="app.js"></script>
+        <div class="second-container">
+
+            <!-- ==========PAGE 2  OUR STORY==================-->
+            <div class="container2-ourStory bumper" id="anchor2">
+                <h1>Our Story</h1>
+            </div>
+            <!-- CARROUSSEL -->
+            <div class="horizontal-section">
+                <div class="sticky-wrapper">
+                  <div class="element-wrapper">
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                  
+                  </div>
+                </div>
+              </div>
+
+            <!-- ================PAGE 3 CONTACT============== -->
+            <div class="container3-contact bumper"  id="anchor3">
+                <h1>Contact</h1>
+            </div>
+
+            <!-- HORIZONTAL 2 A REMPLIR -->
+            <div class="horizontal-section2">
+                <div class="sticky-wrapper2">
+                  <div class="element-wrapper2">
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+    
+
+
+</div>
 </body>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+    integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"
+    integrity="sha512-RL2ypMFkOs/iB79bWnNiFrZRCqyExtQ38n/K+t7Xjf09YZcvSzqgSaGVj+fiVYEqVRLf/WjdHmwGImZM3XO5gA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="app.js"></script>
 </html>
