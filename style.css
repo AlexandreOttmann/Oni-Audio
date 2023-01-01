@@ -26,29 +26,74 @@ body {
     justify-content: center;
     align-items: center;
     color: white; 
-    position: relative;
 }
+
 
 .container2-ourStory{
     background-color: #F7375C;
+    flex-direction: column;
+    font-size: 2rem;
+    padding: 0 10rem;
+    max-height: 150vh;
+    line-height: 3rem;
     
 }
 .container3-contact{
+    max-height:100vh;
     background-color: #385ae0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 20vh;
+    /* border: 1px solid rgb(230, 230, 230); */
+    border-radius: 2vh;
+    background-color:#F7375C ;
+    /* box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.447)  inset; */
+}
+.form-container{
+    box-shadow: 1px 5px 20px #29409a;
+    border-radius: 2vh;
+    margin-top: 5vh
+}
+#email{
+    width: 50%;
+    height: 2rem;
+    border-radius: 1rem;
+    border-style: none;
+    text-align: center;
+}
+#message{
+    border-radius: 1rem;
+    border-style: none;
+    text-align: start;
+    margin-bottom: 1rem;
+}   
+label
+{
+    margin: 1vh 0;
+    font-size: 1/5rem;
+    text-align: start;
+}
+#email-button{
+    color: #F7375C;
+}
+#email-button:active{
+    background-color: #F7375C;
+    color: white;
 }
 
 /*========== HORIZONTAL CONTENT ============== */
 
-/* .bumper {
-    width: 100%;
-    height: 1800px;
-    background-color: #f3f3f3;
-  }
-   */
+
   .horizontal-section, .horizontal-section2 {
     padding: 10vh 0vh;
-    background-color: pink;
-    max-height: 2500px;
+    background-color: rgba(255, 255, 255, 0);
+    max-height: 3700px;
+    /* height:5000px; */
   }
   
   .sticky-wrapper, .sticky-wrapper2 {
@@ -66,10 +111,38 @@ body {
   .element {
     width: 50vh;
     height: 40vh;
-    background-color: purple;
+    background-color: rgb(255, 255, 255);
     margin: 0 2rem 0 0;
     flex-shrink: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
+
+  .sticky-text{
+    color:white;
+    font-size: 1.5rem;
+    padding: 0 0 5rem 2rem;
+    text-decoration:underline;
+    text-underline-offset: 1rem;
+  }
+
+  strong:hover{
+    color: #516ee1;
+  }
+
+.element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+  .element>img{
+    width: 90%;
+    box-shadow: 1px 2px 10px rgb(255, 255, 255, 0.3);
+}
 
   /* END HORIZONTAL CONTENT */
 
@@ -157,7 +230,6 @@ nav{
 
 
 header{
-    /* background: radial-gradient(  rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0)); */
     text-align: center;
     position:static; 
     padding: 11rem 0 0rem 0;
@@ -165,12 +237,7 @@ header{
     font-size: 2rem;
     width:100%;
     color: white;
-    /* border-bottom: 10px solid #F7375C; */
-    /* border-top: 100px solid #F7375C; */
-    
-    /* scroll-behavior: smooth; */
-    /* margin-top: 1rem; */
-    /* position: relative; */
+
 }
 
 
@@ -189,7 +256,7 @@ header{
 .card{
     height: 17rem;
     
-    cursor: pointer;
+    cursor:none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -253,10 +320,18 @@ button{
     border: none;
     font-weight: bold;
     transition:0.5s ;
-    
-    
+    cursor: pointer;
 }
-#mute-button{
+
+.button-play>button:hover{
+    background-color: #849af1;
+    color: white;
+}
+.button-play>button:active{
+    background-color: #F7375C;
+    color: white;
+}
+    #mute-button{
     position: fixed;
     z-index:2;
     right: 2rem;
@@ -280,13 +355,8 @@ button{
     width:100%;
     min-width: 90%
 }
-.card.active iframe:nth-child()
 
-.card.active h2{
-    display: block;
-    padding-bottom: 2rem;
-    
-}
+
 
 
 .card.active h1{
@@ -296,6 +366,11 @@ button{
     display: none;
 }
 
+.card.active h2{
+    display: block;
+    padding-bottom: 2rem;
+    
+}
 .responsive-container{
     height: 100%;
     width: 100%;
@@ -308,6 +383,7 @@ button{
     top: 0; left: 0;
     width: 100%;
     height: 100%;
+    z-index: 111;
     
   }
 
@@ -322,7 +398,7 @@ button{
     /* box-shadow: 0.7rem 0.7rem 0rem #385ae0; */
     border: 2px solid rgba(255, 255, 255, 1);
     backdrop-filter: blur(10px);
-    /* border-radius: 20px solid white; */
+    cursor: auto;
     padding : 1rem;
     flex-direction: row;
     flex-wrap: nowrap;    
@@ -387,6 +463,7 @@ footer{
 
 #cards:hover > .card::after {
     opacity: 1;
+   
   }
   
   .card {
@@ -403,11 +480,13 @@ footer{
   .card:hover::before {
     opacity: 1;
   }
-  
+  a, a:active{
+    color: #F7375C;
+  }
   .card::before,
   .card::after {
     border-radius: inherit;
-    content: "";
+    /* content: ""; */
     height: 100%;
     left: 0px;
     opacity: 0;
@@ -420,7 +499,7 @@ footer{
   .card::before {
     background: radial-gradient(
       600px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.2),
       transparent 40%
     );
     z-index: 3;
@@ -429,10 +508,12 @@ footer{
   .card::after {  
     background: radial-gradient(
       400px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(255, 139, 139, 0.4),
-      transparent 40%
+      rgba(255, 139, 139, 0.2),
+      transparent 30%
+    
     );
     z-index: 1;
+    
   }
   
   .card > .card-content {
@@ -447,4 +528,5 @@ footer{
     z-index: 2;
   }
   
-  
+  /* 1ST HORIZONTAL BAR */
+

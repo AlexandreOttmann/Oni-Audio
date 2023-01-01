@@ -115,3 +115,7 @@ window.onscroll = function(){
     document.querySelector(".element-wrapper2").style.transform = "translateX(-"+(scrollTop - distFromTop2)+"px)";
   }
 }
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
