@@ -119,3 +119,13 @@ window.onscroll = function(){
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
+
+// scroll for top button
+$(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 5000) {
+    $('.topbutton').fadeIn(1000);
+    } else {
+     $('.topbutton').fadeOut(1000);
+    }
+    });
