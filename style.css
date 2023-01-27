@@ -560,6 +560,7 @@ footer{
     font-size: 0;
     align-content: center;
   }
+
   /* media query*/
 
 @media screen and (max-width: 950px)
@@ -575,6 +576,7 @@ footer{
 }
 .card{
     margin: 2em;
+    box-shadow: 10px 10px 20px #7388dbd9;  /* box-shadow: 0.7rem 0.7rem 0rem #385ae0; */
 }
 
 
@@ -586,7 +588,6 @@ footer{
     max-height: 100%;
     position: relative;
     min-height: 23em;
-    /* box-shadow: 0.7rem 0.7rem 0rem #385ae0; */
 
 }
 .card.is-inactive {
@@ -607,6 +608,7 @@ max-width: min-content;
 }
 .container2-ourStory{
     background: linear-gradient(#24318C);
+    
 }
 .form-container{
     width: 100%;
@@ -627,6 +629,7 @@ form{
 position: relative;
 width: auto;
 margin: 0;
+margin-top: 20px;
 padding: 0;
 }
 #first-nav-item{
@@ -644,6 +647,8 @@ nav{
     }
 
 
-
+#projects{
+    margin-top: 3em;
+}
 
 }
