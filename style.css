@@ -556,13 +556,16 @@ footer{
     position: absolute;
     z-index: 2;
   }
-  
+  #bad-link{
+    font-size: 0;
+    align-content: center;
+  }
   /* media query*/
 
 @media screen and (max-width: 950px)
 {
 .container1-projects{
-    height: min-content;
+    height: max-content;
    
 }
 
@@ -623,9 +626,12 @@ form{
 .oni-logo{
 position: relative;
 width: auto;
+margin: 0;
+padding: 0;
 }
 #first-nav-item{
     display: none;
+    
 }
 nav{
     padding: 0;
@@ -633,7 +639,11 @@ nav{
 }
 .nav-links{
     align-items: center;
-}
+    justify-content:center;
+    gap: 1em;
+    }
+
+
 
 
 }

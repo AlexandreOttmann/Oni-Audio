@@ -47,7 +47,7 @@ card.addEventListener('click', () => {
     Flip.from(state, {
         duration: 1,
         ease: "expo.out",
-        absolute: true,
+       
     })
 })
 });
