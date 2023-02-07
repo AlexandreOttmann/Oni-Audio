@@ -4,11 +4,6 @@ Hi! I'm currently **learning web developpment** but my previous job was Sound De
 https://oniaudio.com
 
 
-# Files
+# Stack
 
-I'll add each video / audio files and try to find a lighter solution with links and database
-
-## Layout
-- Still need to build the card animation, with video starting in it.
-- Add a sound on/off button for the background video or put my signature music.
- 
+Made with html/css and javascript only. Using Gsap for card animation
